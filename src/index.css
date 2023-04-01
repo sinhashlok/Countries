@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(100, 100, 100, 1);
+  font-family: "Courier Prime";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  /* background-color: rgba(201, 183, 156, 1); */
+  padding: 0 72px;
+  padding-top: 32px;
+}
+
+nav h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.colored-box {
+  z-index: -1;
+  position: absolute;
+  background-color: rgba(201, 183, 156, 1);
+
+  height: 329px;
+  width: 100%;
+}
+
+.header-country-name {
+  position: absolute;
+  margin-top: 220px;
+  width: 100%;
+}
+
+.header-country-name h1 {
+  text-align: center;
+  color: white;
+  font-size: 64px;
+}
+
+.search-form {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 304px;
+}
+
+.search-box {
+  height: 43px;
+  width: 308px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.search-box::placeholder {
+  font-family: "Courier Prime";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.search-box:focus {
+  text-align: left;
+  width: 500px;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+  font-family: "Courier Prime";
+  font-weight: 400;
+  font-size: 18px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.countryData {
+  width: 80%;
+  position: absolute;
+  margin-top: 371px;
+  margin-left: 72px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.flag {
+  width: 52px;
+  height: 35px;
+}
+
+.countryName {
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 12px;
+}
+
+.capitalName {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.location {
+  margin-left: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.location:hover {
+  color: rgb(226, 79, 79);
+  transition: 0.1s ease-in-out;
+}
+
+.stats {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.stat {
+  font-size: 24px;
+}
+
+.statName {
+  margin-top: 24px;
+}
+
+.statValueArray {
+  margin-top: 8px;
+  margin-left: 24px;
+}
